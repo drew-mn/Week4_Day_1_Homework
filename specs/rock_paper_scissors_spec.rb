@@ -5,15 +5,15 @@ require 'pry'
 class TestPlay_game < Minitest::Test
 
   def setup
-    @play_game1 = Play_game.new('rock', 'paper')
+    @play_game1 = Play_game.new('paper', 'scissors')
     @play_game2 = Play_game.new('rock', 'scissors')
-    @play_game3 = Play_game.new('paper', 'scissors')
+    @play_game3 = Play_game.new('rock', 'paper')
     @play_game4 = Play_game.new('paper', 'paper')
 
   end
 
   def test_paper_wins
-    assert_equal("Paper Wins!!!", @play_game1.play)
+    assert_equal("Scissors Wins!!!", @play_game1.play)
   end
 
   def test_rock_wins
@@ -21,9 +21,9 @@ class TestPlay_game < Minitest::Test
   end
 
   def test_scissors_wins
-    assert_equal("Scissors Wins!!!", @play_game3.play)
+    assert_equal("Paper Wins!!!", @play_game3.play)
   end
-  
+
   def test_draw
     assert_equal("It's a Draw!!!", @play_game4.play)
   end

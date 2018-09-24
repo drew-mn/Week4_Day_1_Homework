@@ -1,25 +1,26 @@
 class RockPaperScissors
 
-  def initialize(player1, player2)
-    @player1 = player1
-    @player2 = player2
+  def initialize(hand1, hand2)
+    @hand1 = hand1
+    @hand2 = hand2
   end
 
   def play
-    if @player1 == "rock" && @player2 == "paper"
-      return "paper wins!"
-    elsif @player1 == "rock" && @player2 == "scissors"
-      return "rock wins!"
-    elsif @player1 == "paper" && @player2 == "rock"
-      return "paper wins!"
-    elsif @player1 == "scissors" && @player2 == "rock"
-      return "rock wins!"
-    elsif @player1 == "paper" && @player2 == "scissors"
-      return "scissors wins!"
-    elsif @player1 == "scissors" && @player2 == "paper"
-      return "scissors wins!"
-    elsif @player1 == @player2
-      return "draw!"
+    if @hand1 == "rock" && @hand2 == "paper"
+      return "Paper wraps Rock. Paper Wins!!!"
+    elsif @hand1 == "scissors" && @hand2 == "paper"
+      return "Scissors cut Paper. Paper Wins!!!"
+    elsif @hand1 == "scissors" && @hand2 == "rock"
+      return "Rock breaks Scissors. Scissors Wins!!!"
+    elsif @hand1 == "paper" && @hand2 == "rock"
+      return "Paper wraps Rock. Paper Wins!!!"
+    elsif @hand1 == "paper" && @hand2 == "scissors"
+      return "Scissors cut Paper. Scissors Wins!!!"
+    elsif @hand1 == "rock" && @hand2 == "scissors"
+      return "Rock blunts Scissors. Rock Wins!!!"
+
+    elsif @hand1 == @hand2
+      return "It's a Draw!"
     end
   end
 
