@@ -2,13 +2,13 @@ require 'minitest/autorun'
 require_relative '../models/rock_paper_scissors.rb'
 require 'pry'
 
-class TestPlay_game < Minitest::Test
+class TestRockPaperScissors < Minitest::Test
 
   def setup
-    @play_game1 = Play_game.new('paper', 'scissors')
-    @play_game2 = Play_game.new('rock', 'scissors')
-    @play_game3 = Play_game.new('rock', 'paper')
-    @play_game4 = Play_game.new('paper', 'paper')
+    @play_game1 = RockPaperScissors.new('paper', 'scissors')
+    @play_game2 = RockPaperScissors.new('rock', 'scissors')
+    @play_game3 = RockPaperScissors.new('rock', 'paper')
+    @play_game4 = RockPaperScissors.new('paper', 'paper')
 
   end
 
