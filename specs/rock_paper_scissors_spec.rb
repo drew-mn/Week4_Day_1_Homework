@@ -12,16 +12,16 @@ class TestPlay_game < Minitest::Test
 
   end
 
-  def test_paper_wins
-    assert_equal("Scissors Wins!!!", @play_game1.play)
+  def test_scissors_wins
+    assert_equal("Scissors cut Paper. Scissors Wins!!!", @play_game1.play)
   end
 
   def test_rock_wins
-    assert_equal("Rock Wins!!!", @play_game2.play)
+    assert_equal("Rock blunts Scissors. Rock Wins!!!", @play_game2.play)
   end
 
-  def test_scissors_wins
-    assert_equal("Paper Wins!!!", @play_game3.play)
+  def test_paper_wins
+    assert_equal("Paper wraps Rock. Paper Wins!!!", @play_game3.play)
   end
 
   def test_draw

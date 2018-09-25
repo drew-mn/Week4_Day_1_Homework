@@ -9,7 +9,7 @@ class RockPaperScissors
     if @hand1 == "rock" && @hand2 == "paper"
       return "Paper wraps Rock. Paper Wins!!!"
     elsif @hand1 == "scissors" && @hand2 == "paper"
-      return "Scissors cut Paper. Paper Wins!!!"
+      return "Scissors cut Paper. Scissors Wins!!!"
     elsif @hand1 == "scissors" && @hand2 == "rock"
       return "Rock breaks Scissors. Scissors Wins!!!"
     elsif @hand1 == "paper" && @hand2 == "rock"
@@ -20,7 +20,7 @@ class RockPaperScissors
       return "Rock blunts Scissors. Rock Wins!!!"
 
     elsif @hand1 == @hand2
-      return "It's a Draw!"
+      return "It's a Draw!!!"
     end
   end
 
